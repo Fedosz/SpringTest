@@ -1,14 +1,34 @@
 package ru.zhukov.springcourse;
 
-public class MusicPlayer {
-    private Music music;
+import java.util.ArrayList;
+import java.util.List;
 
-    public MusicPlayer(Music music) {
+public class MusicPlayer {
+    private List<Music> music = new ArrayList<>();
+    private String name;
+    private int volume;
+
+    public MusicPlayer(List<Music> music) {
         this.music = music;
+    }
+    public MusicPlayer() {}
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getVolume() {
+        return volume;
+    }
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 
     public void playMusic() {
-        System.out.println("Playing: " + music.getSong());
+        for (Music song: music) {
+            System.out.println("Playing: " + song.getSong());
+        }
     }
 
 }
