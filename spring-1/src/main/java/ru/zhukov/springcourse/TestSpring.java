@@ -16,7 +16,6 @@ public class TestSpring {
 
         System.out.println(musicPlayer);
         System.out.println(musicPlayer1);*/
-
         //musicPlayer.playMusic();
 
         //System.out.println(musicPlayer.getVolume());

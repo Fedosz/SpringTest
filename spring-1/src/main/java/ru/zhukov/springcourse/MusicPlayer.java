@@ -7,7 +7,6 @@ public class MusicPlayer {
     private List<Music> music = new ArrayList<>();
     private String name;
     private int volume;
-
     public MusicPlayer(List<Music> music) {
         this.music = music;
     }

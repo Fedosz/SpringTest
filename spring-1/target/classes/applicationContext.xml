@@ -12,10 +12,11 @@
     <bean id="musicBean"
           class="ru.zhukov.springcourse.ClassicalMusic"
     init-method="doMyInit"
-    destroy-method="doMyDestroy">
+    destroy-method="doMyDestroy"
+    factory-method="getClassicalMusic">
     </bean>
 
-    <!--<bean id="musicBean2"
+    <bean id="musicBean2"
           class="ru.zhukov.springcourse.RockMusic">
     </bean>
 
@@ -30,6 +31,6 @@
         </constructor-arg>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>-->
+    </bean>
 
 </beans>

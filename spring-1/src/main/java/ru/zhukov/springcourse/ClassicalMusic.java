@@ -1,6 +1,12 @@
 package ru.zhukov.springcourse;
 
 public class ClassicalMusic implements Music {
+
+    private ClassicalMusic() {}
+
+    public static ClassicalMusic getClassicalMusic() {
+        return new ClassicalMusic();
+    }
     public void doMyInit() {
         System.out.println("Initializing ClassicalMusic");
     }
