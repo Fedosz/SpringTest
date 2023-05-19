@@ -2,11 +2,12 @@
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Человек</title>
+    <title>Person</title>
 </head>
 <body>
 
 <p th:text="${person.getName()}">user</p>
+<p th:text="${person.getEmail()}">Email</p>
 <p th:text="${person.getId()}">id</p>
 
 <a th:href="@{/people/{id}/edit(id=${person.getId()})}"> edit</a>
