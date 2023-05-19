@@ -7,6 +7,6 @@
 <body>
 Hello
 
-<a href="/springWebApp/first/goodbye">Say goodbye</a> or <a href="/springWebApp/exit">Exit</a>
+<a href="/springWebApp/first/calculator">Say goodbye</a> or <a href="/springWebApp/exit">Exit</a>
 </body>
 </html>
